@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
 
-        if (!checkLocationServicesStatus()) {//위치 안켜져있음
+        if (!checkLocationServicesStatus()) {//위치 안켜져있음.
             showDialogForLocationServiceSetting();
 
 
