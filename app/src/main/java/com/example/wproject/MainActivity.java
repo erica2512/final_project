@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
     //변수명 수정하기!
     private SwipeRefreshLayout mysrl;
     public static int TO_GPS = 1;
-    private GpsTracker gpsTracker;
     private static final int GPS_ENABLE_REQUEST_CODE = 2001;
     private static final int PERMISSIONS_REQUEST_CODE = 100;
     String[] REQUIRED_PERMISSIONS = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
@@ -145,22 +144,23 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                 Geocoder geocoder = new Geocoder(MainActivity.this);
 
                 List<Address> address = null; //주소정보 리스트 변수
-                String str_Addr; //주소받을 변수
-
+                String locality, admin; //주소받을 변수
+                String str_Addr;
                 //주소 가져오기
                 try {
                     address = geocoder.getFromLocation(lati, lon, 1);
                     Log.d("kkk", String.valueOf(address));
 
-                    String cut[] = address.get(0).toString().split(" ");
-                    for (int i = 0; i < cut.length; i++) {
-                        Log.d("cut", i + cut[i]);
-                    }
-                    textView.setText(cut[1] + " " + cut[2]);
+                    locality = address.get(0).getLocality();
+                    admin = address.get(0).getAdminArea();
+//                    String cut[] = address.get(0).toString().split(" ");
+//                    for (int i = 0; i < cut.length; i++) {
+//                        Log.d("cut", i + cut[i]);
+//                    }
+                    textView.setText(admin + " " +locality);
                     //getData2();
                     getData();
-                    getAirData3();
-
+                   // getAirData3();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -640,11 +640,21 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                                     "&nx="+nx+
                                     "&ny="+ny;
 
+                            String url = "http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst?itemCode=PM10&dataGubun=HOUR&pageNo=1&numOfRows=1&returnType=json&serviceKey=hjnA51g4D5Jh5pMY%2BL17qEO87IpWw2ZtkiEspqyL9J57fOGtZztzdvGTWgS0dx19sDxNR4G4URiEfN1kHMuSPA%3D%3D";
+
                             TextView ttx;
                             ttx = (TextView)findViewById(R.id.ttx);
                             ttx.setText(base_date+"/"+base_time);
 
+                            TextView tex = (TextView) findViewById(R.id.address);
+                            String te1 = tex.getText().toString();
+                            Log.d("texttt",te1);
 
+                            String[] array = te1.split(" ");
+                            String local = array[0];
+                            Log.d("localll2",local);
+
+                            String finalUrl = url;
                             new Thread(){
 
                                 public void run() {
@@ -665,7 +675,43 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                                         Log.d("tag2",result);
                                         JsonParse(result);
 
+                                        URL url1 = new URL(finalUrl);
+                                        HttpURLConnection connection1 = (HttpURLConnection) url1.openConnection();
+                                        connection1.setRequestMethod("GET");
+                                        connection1.setDoInput(true);
+                                        InputStream is2 = connection1.getInputStream();
+                                        StringBuilder sb2 = new StringBuilder();
+                                        BufferedReader br2 = new BufferedReader(new InputStreamReader(is2,"UTF-8"));
+                                        String result2;
+                                        while ((result2 = br2.readLine())!=null){
+                                            sb2.append(result2+"\n");
+                                        }
+                                        result2 = sb2.toString();
+                                        Log.d("tag3",result2);
+                                        JsonParse4(result2);
 
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                TextView air_tv = findViewById(R.id.air);
+                                                String air = air_tv.getText().toString();
+
+                                                TextView rain_tv = findViewById(R.id.tx2);
+                                                String rain = rain_tv.getText().toString();
+
+                                                ImageView imageView = findViewById(R.id.image);
+
+                                                int a = Integer.parseInt(air);
+                                                if(a<30 && rain.equals("없음")){
+                                                    imageView.setImageResource(R.drawable.good);
+                                                }else if(a>=80 || rain.equals("비") || rain.equals("눈") || rain.equals("비/눈")){
+                                                    imageView.setImageResource(R.drawable.no);
+                                                }else{
+                                                    imageView.setImageResource(R.drawable.soso);
+                                                }
+
+                                            }
+                                        });
                                     } catch (MalformedURLException e) {
                                         e.printStackTrace();
                                     } catch (IOException e) {

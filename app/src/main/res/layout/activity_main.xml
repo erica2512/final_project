@@ -23,11 +23,6 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="#3F51B5" />
-
             <TextView
                 android:id="@+id/address"
                 android:layout_width="match_parent"
@@ -35,7 +30,10 @@
                 android:gravity="center"
                 android:text="현재 위치"
                 android:textSize="25dp"/>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#3F51B5" />
             <TextView
                 android:id="@+id/ttx"
                 android:layout_width="wrap_content"
@@ -43,13 +41,16 @@
                 android:layout_gravity="right"
                 android:text="날짜/시간" />
 
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="#3F51B5" />
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#3F51B5" />
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -58,28 +59,35 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_marginLeft="50dp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|left"
                 android:text="습도"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:id="@+id/i_reh"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher_background"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/i_reh"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
 
             <TextView
                 android:id="@+id/tx3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="30dp"
                 android:gravity="center|left"
                 android:text="습도"
                 android:textSize="20sp" />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8EFA5" />
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -88,96 +96,111 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_marginLeft="50dp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|left"
                 android:text="기온"
                 android:textSize="20sp" />
-            <ImageView
-                android:id="@+id/i_r1h"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher_background"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/i_r1h"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
             <TextView
                 android:id="@+id/tx5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="30dp"
                 android:gravity="center|left"
                 android:text="기온"
                 android:textSize="20sp" />
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8EFA5" />
         <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-
+                android:layout_marginLeft="50dp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|left"
                 android:text="풍속"
                 android:textSize="20sp" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher_background"/>
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
             <TextView
                 android:id="@+id/tx9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_weight="1"
                 android:gravity="center|left"
                 android:text="풍속"
                 android:textSize="20sp" />
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8EFA5" />
         <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_marginLeft="50dp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|left"
                 android:text="강수형태"
                 android:textSize="20sp" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher_background"/>
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
             <TextView
                 android:id="@+id/tx2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="30dp"
                 android:gravity="center|left"
                 android:text="형태"
                 android:textSize="20sp" />
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8EFA5" />
         <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_marginLeft="50dp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|left"
                 android:text="1시간 강수량"
                 android:textSize="20sp" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher_background"/>
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
 
             <TextView
                 android:id="@+id/tx4"
@@ -186,37 +209,47 @@
                 android:layout_weight="1"
                 android:gravity="center|left"
                 android:text="강수"
+                android:layout_marginLeft="30dp"
                 android:textSize="20sp" />
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8EFA5" />
         <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_marginLeft="50dp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:gravity="center|left"
                 android:text="미세먼지"
                 android:textSize="20sp" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_launcher_background"/>
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_launcher_background"/>-->
 
             <TextView
                 android:id="@+id/air"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="30dp"
                 android:gravity="center|left"
                 android:text="먼지"
                 android:textSize="20sp" />
 
         </LinearLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F8EFA5" />
         <!--        <Button-->
         <!--            android:id="@+id/btb"-->
         <!--            android:layout_width="match_parent"-->
