@@ -105,25 +105,25 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         getLastLocation();
 
 
-        //mysrl = findViewById(R.id.srl);
-//        //mysrl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//            @Override
-//            public void onRefresh() {
-//
-//                if (!checkLocationServicesStatus()) {//위치 안켜져있음
-//                    showDialogForLocationServiceSetting();
-//
-//
-//                } else {//위치 켜져있고 위치 권한 허용 확인
-//                    checkRunTimePermission();
-//                }
-//                getLastLocation();
-//
-//
-//                mysrl.setRefreshing(false);
-//            }
-//
-//        });
+        mysrl = findViewById(R.id.srl);
+        mysrl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                if (!checkLocationServicesStatus()) {//위치 안켜져있음
+                    showDialogForLocationServiceSetting();
+
+
+                } else {//위치 켜져있고 위치 권한 허용 확인
+                    checkRunTimePermission();
+                }
+                getLastLocation();
+
+
+                mysrl.setRefreshing(false);
+            }
+
+        });
 
     }
 
@@ -665,7 +665,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                                 public void run() {
 
                                     try {
-                                        sleep(300);
+                                        sleep(100);
                                     } catch (InterruptedException e) {
                                         e.printStackTrace();
                                     }
@@ -740,63 +740,6 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
 
     }
-
-
-//    public void getAirData3(){
-//        String qurl = null;
-//        //텍스트뷰 읽어오기
-//        TextView tex = (TextView) findViewById(R.id.address);
-//        String te1 = tex.getText().toString();
-//        Log.d("texttt",te1);
-//
-//        String[] array = te1.split(" ");
-//        String local = array[0];
-//        Log.d("localll2",local);
-//
-//
-//        qurl = "http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst?itemCode=PM10&dataGubun=HOUR&pageNo=1&numOfRows=1&returnType=json&serviceKey=hjnA51g4D5Jh5pMY%2BL17qEO87IpWw2ZtkiEspqyL9J57fOGtZztzdvGTWgS0dx19sDxNR4G4URiEfN1kHMuSPA%3D%3D";
-//
-//
-//        String finalQurl = qurl;
-//        new Thread(){
-//
-//            public void run() {
-//
-//                try {
-//                    sleep(1000);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//
-//                try {
-//                    URL url = new URL(finalQurl);
-//                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//                    connection.setRequestMethod("GET");
-//                    connection.setDoInput(true);
-//                    InputStream is = connection.getInputStream();
-//                    StringBuilder sb = new StringBuilder();
-//                    BufferedReader br = new BufferedReader(new InputStreamReader(is,"UTF-8"));
-//                    String result;
-//                    while((result = br.readLine())!=null){
-//                        sb.append(result+"\n");
-//                    }
-//                    result = sb.toString();
-//                    Log.d("tag2",result);
-//                    JsonParse4(result);
-//
-//
-//
-//                } catch (MalformedURLException e) {
-//                    e.printStackTrace();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }.start();
-//    }
-
-
-
 
     //api Json파싱
     public void JsonParse(String str) {
