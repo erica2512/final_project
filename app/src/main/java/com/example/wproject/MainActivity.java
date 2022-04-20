@@ -1,5 +1,6 @@
 package com.example.wproject;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -13,6 +14,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -60,7 +62,8 @@ import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
-    //변수명 수정하기!
+    //변수명 수정하기
+
     private SwipeRefreshLayout mysrl;
     public static int TO_GPS = 1;
     private static final int GPS_ENABLE_REQUEST_CODE = 2001;
@@ -102,25 +105,25 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         getLastLocation();
 
 
-        mysrl = findViewById(R.id.srl);
-        mysrl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-
-                if (!checkLocationServicesStatus()) {//위치 안켜져있음
-                    showDialogForLocationServiceSetting();
-
-
-                } else {//위치 켜져있고 위치 권한 허용 확인
-                    checkRunTimePermission();
-                }
-                getLastLocation();
-
-
-                mysrl.setRefreshing(false);
-            }
-
-        });
+        //mysrl = findViewById(R.id.srl);
+//        //mysrl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//
+//                if (!checkLocationServicesStatus()) {//위치 안켜져있음
+//                    showDialogForLocationServiceSetting();
+//
+//
+//                } else {//위치 켜져있고 위치 권한 허용 확인
+//                    checkRunTimePermission();
+//                }
+//                getLastLocation();
+//
+//
+//                mysrl.setRefreshing(false);
+//            }
+//
+//        });
 
     }
 
@@ -160,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                     textView.setText(admin + " " +locality);
                     //getData2();
                     getData();
-                   // getAirData3();
+                    // getAirData3();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -644,7 +647,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
                             TextView ttx;
                             ttx = (TextView)findViewById(R.id.ttx);
-                            ttx.setText(base_date+"/"+base_time);
+                            ttx.setText(base_date);
 
                             TextView tex = (TextView) findViewById(R.id.address);
                             String te1 = tex.getText().toString();
@@ -654,12 +657,20 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                             String local = array[0];
                             Log.d("localll2",local);
 
+                            View background = findViewById(R.id.back);
+
                             String finalUrl = url;
                             new Thread(){
 
                                 public void run() {
-                                    try {
 
+                                    try {
+                                        sleep(300);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
+                                    try {
                                         URL url = new URL(qurl);
                                         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                                         connection.setRequestMethod("GET");
@@ -691,6 +702,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
                                         JsonParse4(result2);
 
                                         runOnUiThread(new Runnable() {
+                                            @SuppressLint("ResourceAsColor")
                                             @Override
                                             public void run() {
                                                 TextView air_tv = findViewById(R.id.air);
@@ -703,11 +715,11 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
                                                 int a = Integer.parseInt(air);
                                                 if(a<30 && rain.equals("없음")){
-                                                    imageView.setImageResource(R.drawable.good);
+                                                    imageView.setImageResource(R.drawable.good_clear);
                                                 }else if(a>=80 || rain.equals("비") || rain.equals("눈") || rain.equals("비/눈")){
-                                                    imageView.setImageResource(R.drawable.no);
+                                                    imageView.setImageResource(R.drawable.bad_clear);
                                                 }else{
-                                                    imageView.setImageResource(R.drawable.soso);
+                                                    imageView.setImageResource(R.drawable.soso_clear);
                                                 }
 
                                             }
@@ -730,58 +742,58 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
     }
 
 
-    public void getAirData3(){
-        String qurl = null;
-        //텍스트뷰 읽어오기
-        TextView tex = (TextView) findViewById(R.id.address);
-        String te1 = tex.getText().toString();
-        Log.d("texttt",te1);
-
-        String[] array = te1.split(" ");
-        String local = array[0];
-        Log.d("localll2",local);
-
-
-        qurl = "http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst?itemCode=PM10&dataGubun=HOUR&pageNo=1&numOfRows=1&returnType=json&serviceKey=hjnA51g4D5Jh5pMY%2BL17qEO87IpWw2ZtkiEspqyL9J57fOGtZztzdvGTWgS0dx19sDxNR4G4URiEfN1kHMuSPA%3D%3D";
-
-
-        String finalQurl = qurl;
-        new Thread(){
-
-            public void run() {
-
-                try {
-                    sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                try {
-                    URL url = new URL(finalQurl);
-                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                    connection.setRequestMethod("GET");
-                    connection.setDoInput(true);
-                    InputStream is = connection.getInputStream();
-                    StringBuilder sb = new StringBuilder();
-                    BufferedReader br = new BufferedReader(new InputStreamReader(is,"UTF-8"));
-                    String result;
-                    while((result = br.readLine())!=null){
-                        sb.append(result+"\n");
-                    }
-                    result = sb.toString();
-                    Log.d("tag2",result);
-                    JsonParse4(result);
-
-
-
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }.start();
-    }
+//    public void getAirData3(){
+//        String qurl = null;
+//        //텍스트뷰 읽어오기
+//        TextView tex = (TextView) findViewById(R.id.address);
+//        String te1 = tex.getText().toString();
+//        Log.d("texttt",te1);
+//
+//        String[] array = te1.split(" ");
+//        String local = array[0];
+//        Log.d("localll2",local);
+//
+//
+//        qurl = "http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst?itemCode=PM10&dataGubun=HOUR&pageNo=1&numOfRows=1&returnType=json&serviceKey=hjnA51g4D5Jh5pMY%2BL17qEO87IpWw2ZtkiEspqyL9J57fOGtZztzdvGTWgS0dx19sDxNR4G4URiEfN1kHMuSPA%3D%3D";
+//
+//
+//        String finalQurl = qurl;
+//        new Thread(){
+//
+//            public void run() {
+//
+//                try {
+//                    sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//
+//                try {
+//                    URL url = new URL(finalQurl);
+//                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+//                    connection.setRequestMethod("GET");
+//                    connection.setDoInput(true);
+//                    InputStream is = connection.getInputStream();
+//                    StringBuilder sb = new StringBuilder();
+//                    BufferedReader br = new BufferedReader(new InputStreamReader(is,"UTF-8"));
+//                    String result;
+//                    while((result = br.readLine())!=null){
+//                        sb.append(result+"\n");
+//                    }
+//                    result = sb.toString();
+//                    Log.d("tag2",result);
+//                    JsonParse4(result);
+//
+//
+//
+//                } catch (MalformedURLException e) {
+//                    e.printStackTrace();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }.start();
+//    }
 
 
 
