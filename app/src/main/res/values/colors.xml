@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    -->
+    <color name="colorPrimary">#C0C0C0</color>
+    <color name="colorPrimaryDark">#C0C0C0</color>
+    <color name="colorAccent">#708090</color> <!--slateGray-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLavender">#E6E6FA</color>
+    <color name="colorPlum">#DDA0DD</color>
+    <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorThistle">#D8BFD8</color>
+</resources>
