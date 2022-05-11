@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:layout_gravity="right|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="마이페이지"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="이메일 주소"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/aniprofile"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_footprint" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_Logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그아웃"
+                android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_Revoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원탈퇴"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="반려동물 프로필"
+                android:textColor="@color/black"
+                android:background="#00ff0000"/>
+
+            <Button
+                android:id="@+id/btn_Hos_Bm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="병원 즐겨찾기"
+                android:textColor="@color/black"
+                android:background="#00ff0000"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
