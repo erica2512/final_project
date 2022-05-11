@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="홈"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/weather"
+        android:icon="@drawable/sunny"
+        android:title="날씨"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/health"
+        android:icon="@drawable/create"
+        android:title="건강기록"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/careguid"
+        android:icon="@drawable/ic_baseline_web_asset_24"
+        android:title="케어가이드"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/hospital"
+        android:icon="@drawable/ic_baseline_local_hospital_24"
+        android:title="동물병원"
+        android:enabled="true"
+        />
+
+</menu>

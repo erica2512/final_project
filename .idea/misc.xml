@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/animal_profile_radio_male.xml" value="0.1235" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_animal_record.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_map.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_mypage.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_pedometer.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_profile.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_diary.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_symptom.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_wather_acticity.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_profile_checkbox_gender.xml" value="0.1" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_record_weight.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_treatment_checkbox.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/list_item.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/weather.xml" value="0.1125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
