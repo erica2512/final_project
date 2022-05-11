@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/animal_profile_radio_male.xml" value="0.1235" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/btn_radius.xml" value="0.1235" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_animal_record.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_care_guid.xml" value="0.1671875" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_map.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_mypage.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_pedometer.xml" value="0.1125" />
-        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_profile.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_profile.xml" value="0.264" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_diary.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_symptom.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_wather_acticity.xml" value="0.1125" />

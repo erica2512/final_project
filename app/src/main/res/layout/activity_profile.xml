@@ -212,6 +212,7 @@
             android:layout_gravity="bottom"
             android:layout_marginTop="10dp"
             android:gravity="center"
+            android:background="@drawable/btn_radius"
             android:text="기록하기"/>
     </LinearLayout>
 </LinearLayout>
