@@ -33,11 +33,11 @@ public class LoginActivity extends AppCompatActivity {
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Commal");
 
-        memail = findViewById(R.id.email);
-        mpwd = findViewById(R.id.password);
+        memail = findViewById(R.id.et_LoginEmail);
+        mpwd = findViewById(R.id.et_LoginPW);
 
 
-        Button btn_login = findViewById(R.id.btn_login);
+        Button btn_login = findViewById(R.id.btn_Login);
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,11 +45,13 @@ public class LoginActivity extends AppCompatActivity {
                 String stremail = memail.getText().toString();
                 String strpwd = mpwd.getText().toString();
 
+
                 mFirebaseAuth.signInWithEmailAndPassword(stremail, strpwd).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //로그인 성공
+
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish(); //현재 엑티비티 종료
@@ -62,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_register = findViewById(R.id.btn_register);
+        Button btn_register = findViewById(R.id.btn_Register);
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
