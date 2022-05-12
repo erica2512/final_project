@@ -58,7 +58,7 @@
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <ScrollView
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fillViewport="true">
@@ -66,7 +66,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:orientation="vertical">
+
+                    <requestFocus/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -110,14 +114,21 @@
                         android:background="@drawable/round_layout"
                         android:orientation="vertical">
 
-                        <EditText
+                        <androidx.core.widget.NestedScrollView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
-                            android:padding="15dp"
-                            android:gravity="left|top"
-                            android:background="@null"
-                            android:inputType="textMultiLine|textNoSuggestions"
-                            android:hint="내용울 입력하세요."/>
+                            android:clipToPadding="false">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:gravity="left|top"
+                                android:scrollbars = "vertical"
+                                android:background="@null"
+                                android:inputType="textMultiLine|textNoSuggestions"
+                                android:hint="내용울 입력하세요."/>
+                        </androidx.core.widget.NestedScrollView>
                     </LinearLayout>
 
                     <LinearLayout
@@ -162,7 +173,7 @@
                             tools:ignore="Suspicious0dp" />
                     </LinearLayout>
                 </LinearLayout>
-            </ScrollView>
+            </androidx.core.widget.NestedScrollView>
         </LinearLayout>
 
         <Button

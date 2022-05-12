@@ -27,6 +27,7 @@ public class activity_pedometer extends AppCompatActivity implements SensorEvent
     SensorManager sensorManager;
     Sensor stepCountSensor;
 
+    // 날짜
     long mNow;
     Date mDate;
     SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -100,7 +101,7 @@ public class activity_pedometer extends AppCompatActivity implements SensorEvent
     }
 
     // 오늘 날짜 받아오기
-    private String getTime(){
+    public String getTime(){
         mNow = System.currentTimeMillis();
         mDate = new Date(mNow);
         return mFormat.format(mDate);

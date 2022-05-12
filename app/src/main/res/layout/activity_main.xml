@@ -28,7 +28,6 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textSize="25dp">
-
         </TextView>
 
         <ImageButton
