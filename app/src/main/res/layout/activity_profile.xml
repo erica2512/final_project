@@ -28,7 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_image_add"
-            android:background="gray"
             android:text="사진 변경"
             android:textColor="@color/black"
             android:textSize="10dp"/>

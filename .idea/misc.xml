@@ -3,11 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable-v24/ic_add.xml" value="0.217" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/animal_profile_radio_male.xml" value="0.1235" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/btn_radius.xml" value="0.1235" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_fish.xml" value="0.2325" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_pee.xml" value="0.2325" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_plate.xml" value="0.2325" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_shit.xml" value="0.217" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_splash.xml" value="0.217" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_stethoscope.xml" value="0.217" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_toilet.xml" value="0.2325" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_toilet_bathroom.xml" value="0.217" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_water02.xml" value="0.2325" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/font/font.xml" value="0.1" />
-        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_animal_record.xml" value="0.1125" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_animal_record.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_care_guid.xml" value="0.264" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_feed_acticity.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_join.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_login.xml" value="0.1671875" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_main.xml" value="0.1671875" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_map.xml" value="0.1125" />
@@ -15,13 +27,27 @@
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_pedometer.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_profile.xml" value="0.264" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_diary.xml" value="0.176" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_dosage.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_feces.xml" value="0.2" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_pee.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_splash.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_symptom.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_treatment.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_record_weight.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_symptom.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_wather_acticity.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_weight.xml" value="0.2" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_profile_checkbox_gender.xml" value="0.1" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_record_weight.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/care_guide_detail.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/ic_toilet.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_careguide.xml" value="0.2390625" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_feces.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_pee.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_record_pee.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_splash.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_symptom.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_treatment.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/item_treatment_checkbox.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/list_item.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/weather.xml" value="0.1125" />

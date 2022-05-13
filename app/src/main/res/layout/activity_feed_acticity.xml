@@ -57,6 +57,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:src="@drawable/ic_fish"
                 android:layout_marginBottom="10dp"/>
 
             <TextView

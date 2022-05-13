@@ -9,6 +9,6 @@ public class Symptom extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_symptom);
+        setContentView(R.layout.activity_record_symptom);
     }
 }
