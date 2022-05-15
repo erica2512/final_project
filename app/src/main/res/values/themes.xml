@@ -31,6 +31,7 @@
 
     <style name="efaButtonStyle" parent="android:Widget.Button">
         <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+        <item name="android:padding">15dp</item>
     </style>
 
     <style name="efaEditTextStyle" parent="android:Widget.EditText">
@@ -43,6 +44,7 @@
 
     <style name="efaImageButtonStyle" parent="android:Widget.ImageButton">
         <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+        <item name="android:padding">5dp</item>
     </style>
 
     <style name="efaDatePickerStyle" parent="android:Widget.DatePicker">
