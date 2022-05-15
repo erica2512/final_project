@@ -19,7 +19,6 @@
         <item name="editTextStyle">@style/efaEditTextStyle</item>
         <item name="android:radioButtonStyle">@style/efaRadioButtonStyle</item>
         <item name="imageButtonStyle">@style/efaImageButtonStyle</item>
-        <item name="android:calendarViewStyle">@style/efaCalendarViewStyle</item>
         <item name="android:datePickerStyle">@style/efaDatePickerStyle</item>
         <item name="android:listViewStyle">@style/efaListViewStyle</item>
         <item name="toolbarStyle">@style/efaToolbarStyle</item>
@@ -43,10 +42,6 @@
     </style>
 
     <style name="efaImageButtonStyle" parent="android:Widget.ImageButton">
-        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
-    </style>
-
-    <style name="efaCalendarViewStyle" parent="android:Widget.CalendarView">
         <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
     </style>
 
