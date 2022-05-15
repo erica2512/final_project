@@ -16,7 +16,7 @@
         <!-- 글씨체 적용 -->
         <item name="android:textViewStyle">@style/efaTextViewStyle</item>
         <item name="android:buttonStyle">@style/efaButtonStyle</item>
-        <item name="android:editTextStyle">@style/efaEditTextStyle</item>
+        <item name="editTextStyle">@style/efaEditTextStyle</item>
         <item name="android:radioButtonStyle">@style/efaRadioButtonStyle</item>
         <item name="imageButtonStyle">@style/efaImageButtonStyle</item>
         <item name="android:calendarViewStyle">@style/efaCalendarViewStyle</item>
