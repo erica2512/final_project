@@ -12,5 +12,53 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <!-- 글씨체 적용 -->
+        <item name="android:textViewStyle">@style/efaTextViewStyle</item>
+        <item name="android:buttonStyle">@style/efaButtonStyle</item>
+        <item name="android:editTextStyle">@style/efaEditTextStyle</item>
+        <item name="android:radioButtonStyle">@style/efaRadioButtonStyle</item>
+        <item name="imageButtonStyle">@style/efaImageButtonStyle</item>
+        <item name="android:calendarViewStyle">@style/efaCalendarViewStyle</item>
+        <item name="android:datePickerStyle">@style/efaDatePickerStyle</item>
+        <item name="android:listViewStyle">@style/efaListViewStyle</item>
+        <item name="toolbarStyle">@style/efaToolbarStyle</item>
+    </style>
+
+    <!-- 글씨체 적용 style 선언-->
+    <style name="efaTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaButtonStyle" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaRadioButtonStyle" parent="android:Widget.DeviceDefault.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaImageButtonStyle" parent="android:Widget.ImageButton">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaCalendarViewStyle" parent="android:Widget.CalendarView">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaDatePickerStyle" parent="android:Widget.DatePicker">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaListViewStyle" parent="android:Widget.DeviceDefault.Light.ListView">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
+    </style>
+
+    <style name="efaToolbarStyle" parent="android:Widget.Toolbar">
+        <item name="android:fontFamily">@font/gangwon_educationforall_bold</item>
     </style>
 </resources>

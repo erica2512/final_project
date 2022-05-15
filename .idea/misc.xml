@@ -15,7 +15,7 @@
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_toilet.xml" value="0.2325" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_toilet_bathroom.xml" value="0.217" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/drawable/ic_water02.xml" value="0.2325" />
-        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/font/font.xml" value="0.2" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_animal_record.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_care_guid.xml" value="0.264" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_feed_acticity.xml" value="0.25364583333333335" />
@@ -38,6 +38,7 @@
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_wather_acticity.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/activity_weight.xml" value="0.2" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_profile_checkbox_gender.xml" value="0.1" />
+        <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_record_dosage_detail.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/animal_record_weight.xml" value="0.1125" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/care_guide_detail.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/skyl5/AndroidStudioProjects/Myapp/app/src/main/res/layout/ic_toilet.xml" value="0.25364583333333335" />
